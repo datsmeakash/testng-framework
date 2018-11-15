@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Parallel]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="environment" value="ie"/>
+  <parameter name="config" value="parallel.conf.json"/>
+  <test name="SingleTestChrome">
+    <parameter name="environment" value="chrome"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+    </classes>
+  </test> <!-- SingleTestChrome -->
+  <test name="SingleTestFirefox">
+    <parameter name="environment" value="firefox"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+    </classes>
+  </test> <!-- SingleTestFirefox -->
+  <test name="SingleTestSafari">
+    <parameter name="environment" value="safari"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+    </classes>
+  </test> <!-- SingleTestSafari -->
+  <test name="SingleTestIE">
+    <parameter name="environment" value="ie"/>
+    <parameter name="config" value="parallel.conf.json"/>
+    <classes>
+      <class name="com.browserstack.SingleTest"/>
+    </classes>
+  </test> <!-- SingleTestIE -->
+</suite> <!-- Failed suite [Parallel] -->
